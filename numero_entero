@@ -1,0 +1,44 @@
+using System;
+using System.Colletions.Generic;
+using Sistem.Linq;
+using System.Text;
+
+namespace NumeroEntero
+{
+    class Program
+
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            string linea;
+            Console.Write("ingrese un valor de tres dígitos positivos.");
+            linea = Console.ReadLine();
+            num=int.Parse(linea);
+            if (num<10)
+            {
+                Console.Write("tienen un dígito");
+
+            }
+            else
+            {
+                if (num<100)
+                {
+                    Console.Write("tiene dos dígitos")
+                }
+                else
+                {
+                    if (num<1000)
+                    {
+                        Console.Write("tiene tres dígitos");
+                    }
+                    else
+                    {
+                        Console.Write("Error en los datos.");
+                    }
+                }
+            }
+            Console.ReadKey();
+        }    
+    }
+}
