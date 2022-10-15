@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace Estrucutracondicionalanidada
+{
+    class Program
+    {
+        static void Main(string[]args)
+        {
+            int num;
+            string linea;
+            Console.Write("Escriba un valor de hasta tres dígitos positivos:");
+            linea=Console.ReadLine();
+            num=int.Parse(linea);
+            if (num<10)
+            {
+                console.Write("tiene un dígito");
+            }
+            else
+            {
+                if (num<100)
+                {
+                    console.Write("tiene dos dígitos");
+                }
+                else
+                {
+                    if (num<1000)
+                    {
+                        Console.Write("tiene tres dígitos");
+                    }
+                    else
+                    {
+                        Console.Write("Error en el ingreso de datos");
+                    }
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace Estructura_condicional_anidada_1
+{
+    class Program
+    {
+        static void Main(static[]args);
+        {
+            int nota1, nota2, nota3;
+            string linea;
+            Console.Write("ingrese primer nota:");
+            linea=Console.ReadLine();
+            nota1=int.Parse(linea);
+            Console.Write("ingrese segunda nota:");
+            linea=Console.ReadLine();
+            nota2=int.Parse(linea);
+            Console.Write("ingrece tercer nota:");
+            linea=Console.ReadLine();
+            nota3=int.Parse(linea);
+            int promedio=(nota1 + nota2 + nota3) / 3;
+            if(promedio>=7)
+            {
+                Console.Write("promocionado");
+            }
+            else
+            {
+                if (promedio>=4)
+                {
+                    Console.Write("regular");
+                }
+                else
+                {
+                    Console.Write("reprobado");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
